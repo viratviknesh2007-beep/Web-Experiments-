@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Registration</title>
+
+<script>
+function validateForm() {
+    var name = document.forms["regForm"]["name"].value;
+    var email = document.forms["regForm"]["email"].value;
+    var password = document.forms["regForm"]["password"].value;
+
+    if (name == "" || email == "" || password == "") {
+        alert("All fields must be filled!");
+        return false;
+    }
+
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters!");
+        return false;
+    }
+
+    return true;
+}
+</script>
+
+</head>
+<body>
+
+<h1>Registration Form</h1>
+
+<a href="index.html">Home</a> |
+<a href="products.html">Products</a> |
+<a href="cart.html">Cart</a> |
+<a href="contact.html">Contact</a> |
+<a href="login.html">Login</a>
+
+<hr>
+
+<form name="regForm" onsubmit="return validateForm()">
+    Name: <input type="text" name="name"><br><br>
+    Email: <input type="email" name="email"><br><br>
+    Password: <input type="password" name="password"><br><br>
+    <input type="submit" value="Register">
+</form>
+
+</body>
+</html>

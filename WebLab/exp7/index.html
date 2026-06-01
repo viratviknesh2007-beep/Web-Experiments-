@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Handling Experiment</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .section {
+            margin: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Event Handling - Exercise 7</h1>
+
+<!-- ================= EXERCISE 1 ================= -->
+<div class="section">
+    <h2>Personal Website (Exercise 1)</h2>
+
+    <!-- Button Click -->
+    <button onclick="showAbout()">About Me</button>
+    <p id="about"></p>
+
+    <!-- Hover -->
+    <p onmouseover="hoverText(this)" onmouseout="normalText(this)">
+        Hover over this text
+    </p>
+
+    <!-- Input -->
+    <input type="text" placeholder="Enter your name" onkeyup="showName(this.value)">
+    <p id="name"></p>
+</div>
+
+<!-- ================= EXERCISE 2 ================= -->
+<div class="section">
+    <h2>E-commerce Website (Exercise 2)</h2>
+
+    <!-- Add to Cart -->
+    <button onclick="addToCart()">Add to Cart</button>
+    <p id="cart"></p>
+
+    <!-- Dropdown -->
+    <select onchange="selectCategory(this.value)">
+        <option value="">Select Category</option>
+        <option value="Mobiles">Mobiles</option>
+        <option value="Laptops">Laptops</option>
+        <option value="Clothes">Clothes</option>
+    </select>
+    <p id="category"></p>
+
+    <!-- Search -->
+    <input type="text" placeholder="Search product" onkeyup="searchProduct(this.value)">
+    <p id="search"></p>
+
+</div>
+
+<script>
+/* Exercise 1 */
+function showAbout() {
+    document.getElementById("about").innerHTML = "Hello! This is my personal website.";
+}
+
+function hoverText(element) {
+    element.innerHTML = "You are hovering!";
+}
+
+function normalText(element) {
+    element.innerHTML = "Hover over this text";
+}
+
+function showName(value) {
+    document.getElementById("name").innerHTML = "Welcome " + value;
+}
+
+/* Exercise 2 */
+function addToCart() {
+    document.getElementById("cart").innerHTML = "Item added to cart!";
+}
+
+function selectCategory(value) {
+    document.getElementById("category").innerHTML = "Selected: " + value;
+}
+
+function searchProduct(value) {
+    document.getElementById("search").innerHTML = "Searching for: " + value;
+}
+</script>
+
+</body>
+</html>

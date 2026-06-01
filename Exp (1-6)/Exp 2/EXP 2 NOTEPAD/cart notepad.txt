@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+</head>
+<body>
+
+<header>
+    <h1>Shopping Cart</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="products.html">Products</a>
+    </nav>
+</header>
+
+<section>
+<table border="1">
+    <tr>
+        <th>Product</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>Product 1</td>
+        <td>₹500</td>
+    </tr>
+</table>
+</section>
+
+<aside>
+    <p>Total: ₹500</p>
+</aside>
+
+<footer>
+    <p>Thank you for shopping</p>
+</footer>
+
+</body>
+</html>

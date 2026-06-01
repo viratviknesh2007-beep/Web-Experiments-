@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Order Details</h1>
+
+    <a href="index.html">Home</a> |
+    <a href="products.html">Products</a> |
+    <a href="cart.html">Cart</a> |
+    <a href="contact.html">Contact</a>
+
+    <hr>
+
+    <form style="text-align: center;">
+        Name: <input type="text"><br><br>
+
+        Address: <textarea></textarea><br><br>
+
+        Payment Method:
+        <select>
+            <option>UPI</option>
+            <option>Card</option>
+            <option>Cash</option>
+        </select><br><br>
+
+        <input type="submit" value="Order">
+    </form>
+
+</body>
+</html>

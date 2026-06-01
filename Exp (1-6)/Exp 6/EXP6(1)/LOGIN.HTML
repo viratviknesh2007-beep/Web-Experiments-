@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Login</title>
+
+<script>
+function validateLogin() {
+    var email = document.forms["loginForm"]["email"].value;
+    var password = document.forms["loginForm"]["password"].value;
+
+    if (email == "" || password == "") {
+        alert("Enter Email and Password!");
+        return false;
+    }
+
+    if (password.length < 6) {
+        alert("Invalid Password!");
+        return false;
+    }
+
+    return true;
+}
+</script>
+
+</head>
+<body>
+
+<h1>Login Form</h1>
+
+<a href="index.html">Home</a> |
+<a href="products.html">Products</a> |
+<a href="cart.html">Cart</a> |
+<a href="contact.html">Contact</a> |
+<a href="registration.html">Register</a>
+
+<hr>
+
+<form name="loginForm" onsubmit="return validateLogin()">
+    Email: <input type="email" name="email"><br><br>
+    Password: <input type="password" name="password"><br><br>
+    <input type="submit" value="Login">
+</form>
+
+</body>
+</html>

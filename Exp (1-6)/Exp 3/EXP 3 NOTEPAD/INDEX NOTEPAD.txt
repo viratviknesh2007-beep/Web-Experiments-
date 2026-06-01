@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+ 
+    <style>
+        p {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1 style="text-align: center;">Vikneshwaran</h1>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<hr>
+
+<section>
+    <h2>Welcome</h2>
+    <p>Hello! I am a CSE student learning web development.</p>
+</section>
+
+
+
+</body>
+</html>
